@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUTHOR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #eaeaf1, #dcdcec);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 0px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 25px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #0077ff;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+        }
+
+        .content-box {
+            background: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            padding: 63px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(29, 29, 29, 0.1);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .content-box h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .author-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 10px;
+    border: 3px solid #000000; /* You can change the color or thickness */
+}
+
+
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .co-author-box {
+            background: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(29, 29, 29, 0.1);
+            text-align: center;
+        }
+
+        .co-author-box h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .co-authors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .co-author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+        }
+
+        .co-author-name {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                margin-top: 10px;
+            }
+
+            .content-box, .co-author-box {
+                padding: 25px;
+            }
+
+            .co-authors {
+                gap: 20px;
+            }
+        }
+
+        footer {
+            background: #222;
+            color: #eee;
+            padding: 30px 0;
+            margin-top: 50px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        #contact-info span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #social-links a {
+            color: #80cbc4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #social-links a:hover {
+            color: #26a69a;
+            text-decoration: underline;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+            margin-top: 15px;
+            color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <img src="ccslogo.jpg" alt="Home" style="height: 45px;">
+                    </a>
+                </li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="author.html">AUTHOR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h1>AUTHOR</h1>
+            <div class="author-image">
+                <img src="leila123.jpg" alt="Leila Romar Perjes Bellen">
+            </div>
+            <div class="co-author-name">Bb. Leila Romar Perjes Bellen</div>
+        </div>
+
+        <div class="co-author-box">
+            <h2>DEVELOPERS</h2>
+            <div class="co-authors">
+                <div class="co-author">
+                    <div class="author-image">
+                        <img src="lian.jpeg" alt="Co-author 1">
+                    </div>
+                    <div class="co-author-name">Sarmiento, Lian Abalos</div>
+                </div>
+                <div class="co-author">
+                    <div class="author-image">
+                        <img src="kent1.jpg" alt="Co-author 2">
+                    </div>
+                    <div class="co-author-name">Malda, Kentseth Wesley Marquez</div>
+                </div>
+                <div class="co-author">
+                    <div class="author-image">
+                        <img src="mei.png" alt="Co-author 3">
+                    </div>
+                    <div class="co-author-name">Buluran, Yrienea Mei Gutierrez</div>
+                </div>
+                <div class="co-author">
+                    <div class="author-image">
+                        <img src="aye.jpg" alt="Co-author 4">
+                    </div>
+                    <div class="co-author-name">Sapiller, Ayexha Zoe Soriano</div>
+                </div>
+                <div class="co-author">
+                    <div class="author-image">
+                        <img src="bravs1.png" alt="Co-author 5">
+                    </div>
+                    <div class="co-author-name">Bravo, Jhon David Manait</div>
+                </div>
+                <div class="co-author">
+                    <div class="author-image">
+                        <img src="cess.jpg" alt="Co-author 6">
+                    </div>
+                    <div class="co-author-name">Querida, Princess Duena</div>
+                </div>
+                <div class="co-author">
+                    <div class="author-image">
+                        <img src="justine.jpeg" alt="Co-author 7">
+                    </div>
+                    <div class="co-author-name">Rodriguez, Justine Rhey Alinsub</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contact-info">
+            <span>Phone: +639309309309</span>
+            <span>Email: romarleila2@gmail.com</span>
+            <span>Address: Quezon City, Metro Manila</span>
+        </div>
+        <div id="social-links">
+            <a href="https://www.facebook.com/share/1BbbhFTLYd/">Facebook</a>
+            <a href="https://www.instagram.com/leilabellen?igsh=ZjMzN2xxbGIyaHJu">Instagram</a>
+        </div>
+        <p>&copy; 2025 All Rights Reserved | Created by BSIT 12026</p>
+    </footer>
+
+</body>
+</html>

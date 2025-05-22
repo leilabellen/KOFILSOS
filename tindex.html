@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KOMFIL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #eaeaf1, #dcdcec);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 25px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 25px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .logo:hover {
+      color: #0077ff;
+      transition: color 0.3s;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px 20px 20px;
+      width: 100%;
+    }
+
+    .weeks-container {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      margin-top: 0;
+      text-align: center;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      max-width: 90%;
+      word-wrap: break-word;
+    }
+
+    .weeks-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      width: 100%;
+      max-width: 900px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+
+    .week-box {
+      border: 2px solid #000;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      background: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .week-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .weeks-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 600px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .week-box {
+        font-size: 16px;
+        padding: 15px;
+      }
+      .title {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      nav {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="subjects.html" class="logo">BACK</a>
+  </nav>
+</header>
+
+<main>
+  <div class="weeks-container">
+    <div class="title">KONTEKSTWALISADONG KOMUNIKASYON SA FILIPINO</div>
+
+    <div class="weeks-grid">
+      <a href="kweek1.html" class="week-box">WEEK 01</a>
+      <a href="kweek2.html" class="week-box">WEEK 02</a>
+      <a href="kweek3.html" class="week-box">WEEK 03</a>
+      <a href="kweek4.html" class="week-box">WEEK 04</a>
+      <a href="kweek5.html" class="week-box">WEEK 05</a>
+      <a href="kweek6.html" class="week-box">WEEK 06</a>
+      <a href="kweek7.html" class="week-box">WEEK 07</a>
+      <a href="kweek8.html" class="week-box">WEEK 08</a>
+      <a href="kweek9.html" class="week-box">WEEK 09</a>
+      <a href="kweek10.html" class="week-box">WEEK 10</a>
+      <a href="kweek11.html" class="week-box">WEEK 11</a>
+      <a href="kweek12.html" class="week-box">WEEK 12</a>
+      <a href="kweek13.html" class="week-box">WEEK 13</a>
+      <a href="kweek14.html" class="week-box">WEEK 14</a>
+      <a href="kweek15.html" class="week-box">WEEK 15</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
